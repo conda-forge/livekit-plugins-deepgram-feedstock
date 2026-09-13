@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 1.7.1
+  version: 1.8.0
 
 package:
   name: livekit-plugins-deepgram
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/l/livekit-plugins-deepgram/livekit_plugins_deepgram-${{ version }}.tar.gz
-    sha256: 3789799b9c9e3de90949257baf1a4b08912c89780822cb261eece632489b3337
+    sha256: 6b32161208bb46a5b063f23a1809cce1e04aff7b58167eeb4ab7925fd128e00c
   - url: https://raw.githubusercontent.com/livekit/agents/refs/tags/livekit-agents%40${{ version }}/LICENSE
     sha256: c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     file_name: LICENSE
@@ -26,7 +26,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - livekit-agents >=1.7.1
+    - livekit-agents >=1.8.0
     - numpy >=1.26
 tests:
   - python:
